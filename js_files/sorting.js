@@ -30,7 +30,6 @@ function disableButtons(button){
         if(sort_buttons[i].id!=button){
             sort_buttons[i].disabled=true;
         }
-        console.log(sort_buttons[i]);
     }
 }
 function enableButtons(button){
@@ -51,7 +50,6 @@ slider1.addEventListener("onchange",arraySize());
 var size=100;
 function arraySize(){
     size=slider1.value;
-    console.log(size);
     createBars();
 }
 slider2=document.getElementById("range2");
@@ -59,5 +57,4 @@ slider2.addEventListener("onchange",execSpeed());
 speed=0;
 function execSpeed(){
     speed=slider2.value;
-    console.log(speed);
 }

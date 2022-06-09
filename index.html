@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <h2 style="text-align:center" class="display-5">Sorting Visualizer</h2>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="sorting.css">
+    </head>
+    <body style="background-color: #90DDB6">
+        <nav class="navbar">
+            <div>
+                <button type="button" class="btn btn-dark btn-outline-success" id="newarray">New Array</button>
+            </div>
+            <div id="size">
+                <label id="number" class="outline-success">Array Size</label>
+                <input type="range" min = "0" max="100" value="100" class="form-range" id="range1" oninput="arraySize()">
+            </div>
+            <div id="speed">
+                <label id="fast">Speed</label>
+                <input type="range" class="form-range" id="range2" min = "1" max="100" value="50" oninput="execSpeed()">
+            </div>
+            <div id="sorts">
+                <button type="button" class="btn btn-dark btn-outline-success" id="bubblesort">Bubble sort</button>
+                <button type="button" class="btn btn-dark btn-outline-success" id="selectionsort">Selection Sort</button>
+                <button type="button" class="btn btn-dark btn-outline-success" id="insertionsort">Insertion Sort</button>
+                <button type="button" class="btn btn-dark btn-outline-success" id="quicksort">Quick Sort</button>
+                <button type="button" class="btn btn-dark btn-outline-success" id="mergesort">Merge Sort</button>
+            </div>
+        </nav>
+
+        <div id="barContainer"></div>
+        <script src="js_files/sorting.js"></script>
+        <script src="js_files/bubble.js"></script>
+        <script src="js_files/selection.js"></script>
+        <script src="js_files/insertion.js"></script>
+        <script src="js_files/quick.js"></script>
+        <script src="js_files/merge.js"></script>
+    </body>
+</html>

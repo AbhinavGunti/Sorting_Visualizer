@@ -1,5 +1,4 @@
 document.getElementById("newarray").addEventListener("click",createBars);
-// document.getElementById("range1").addEventListener("oninput",createBars);
 function createArray(){
     elements=[];
     for(i=0;i<size;i++){
@@ -10,8 +9,6 @@ function createArray(){
 async function createBars(){
     enableButtons("all");
     document.getElementById("barContainer").innerHTML="";
-
-    // await new Promise(resolve => setTimeout(() => {resolve()},10));  
     createArray();
     for(var i=0;i<size;i++){
         var bar=document.createElement("div");

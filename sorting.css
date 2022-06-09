@@ -1,16 +1,6 @@
-/* .bars{
-    background-color:"#0E5933";
-    width:"7px";
-    display:"inline-block";
-    margin:"2px";
-    vertical-align:"top";
-    display:flex;
-    align-content: center;
-    justify-content: center;
-} */
 #barContainer{
-    /* margin-left: 7%; */
-    padding-top: 25px;
+    padding-top: 0px;
+    margin-top: 0px;
     margin-left: 80px;
     padding-right: 80px;
    
